@@ -65,7 +65,7 @@ POSSIBILITY OF SUCH DAMAGE.
       <uri>model://wrc_frame</uri>
       <pose frame=''>0 0 0 0 -0 0</pose>
     </include>
-    <include>
+    <!-- <include>
       <name>wrc_bookshelf</name>
       <uri>model://wrc_bookshelf</uri>
       <static>1</static>
@@ -76,14 +76,14 @@ POSSIBILITY OF SUCH DAMAGE.
       <static>1</static>
       <uri>model://wrc_bin_black</uri>
       <pose frame=''>-2.7 -1.7 0 0 -0 0</pose>
-    </include>
+    </include> -->
     <include>
       <name>wrc_bin_green</name>
       <static>1</static>
       <uri>model://wrc_bin_green</uri>
       <pose frame=''>-2.7 -1.2 0 0 -0 0</pose>
     </include>
-    <include>
+    <!-- <include>
       <name>wrc_stair_like_drawer</name>
       <static>1</static>
       <uri>model://wrc_stair_like_drawer</uri>
@@ -118,7 +118,7 @@ POSSIBILITY OF SUCH DAMAGE.
         <uri>model://trofast</uri>
       </xacro:unless>
       <pose frame=''>-2.7 1 0.36 0 -0 0</pose>
-    </include>
+    </include> -->
     <include>
       <name>wrc_tall_table</name>
       <static>1</static>
@@ -147,7 +147,7 @@ POSSIBILITY OF SUCH DAMAGE.
       <uri>model://wrc_tray</uri>
       <pose frame=''>-2.7 -0.45 0.4 0 -0 1.57</pose>
     </include>
-    <include>
+    <!-- <include>
       <name>wrc_container_a</name>
       <uri>model://wrc_container_a</uri>
       <pose frame=''>-2.7 -0.2 0.4 0 -0 0</pose>
@@ -166,6 +166,6 @@ POSSIBILITY OF SUCH DAMAGE.
       <name>person_standing_0</name>
       <uri>model://person_standing</uri>
       <pose frame=''>1.8 1.5 0 0 -0 0</pose>
-    </include>
+    </include> -->
   </world>
 </sdf>
