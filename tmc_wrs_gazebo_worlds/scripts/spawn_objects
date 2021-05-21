@@ -285,7 +285,7 @@ if __name__ == '__main__':
     place_items = []
     for i in range(len(task1_places)):
         place_items.append([])
-    for s in [food, kitchen_items, tools, shape_items, task_items]:
+    for s in [food, kitchen_items]:
         # shuffle items order
         s['items'] = random.sample(s['items'], len(s['items']))
         for i in range(0, args.percategory):
