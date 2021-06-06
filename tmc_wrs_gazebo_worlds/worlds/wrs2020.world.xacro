@@ -65,13 +65,13 @@ POSSIBILITY OF SUCH DAMAGE.
       <uri>model://wrc_frame</uri>
       <pose frame=''>0 0 0 0 -0 0</pose>
     </include>
-    <!-- <include>
+    <include>
       <name>wrc_bookshelf</name>
       <uri>model://wrc_bookshelf</uri>
       <static>1</static>
       <pose frame=''>2.7 -1 0 0 -0 -1.57</pose>
     </include>
-    <include>
+    <!-- <include>
       <name>wrc_bin_black</name>
       <static>1</static>
       <uri>model://wrc_bin_black</uri>

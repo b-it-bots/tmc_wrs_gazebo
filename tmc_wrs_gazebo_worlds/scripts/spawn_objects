@@ -316,15 +316,15 @@ if __name__ == '__main__':
         drop_object('task2a_{0}'.format(i + 1), s['items'][i % len(s['items'])], x, y, z, yaw)
 
     # task #2
-    # s = food
-    # # shuffle items order
-    # s['items'] = random.sample(s['items'], len(s['items']))
-    # cnt = 1
-    # for place in [task2_shelf_plate1, task2_shelf_plate2]:
-    #     X = generate_scatter(place[0][0], place[1][0], place[0][1], place[1][1], args.perrow, 0.2)
-    #     for j in range(args.perrow):
-    #         yaw = 0 # math.pi * (random.random() - 0.5)
-    #         name = s['items'][(cnt - 1) % len(s['items'])]
-    #         drop_object('task2_{0}_{1}'.format(cnt, name), name, X[j][0], X[j][1], place[0][2], yaw)
-    #         cnt += 1
+    s = food
+    # shuffle items order
+    s['items'] = random.sample(s['items'], len(s['items']))
+    cnt = 1
+    for place in [task2_shelf_plate1, task2_shelf_plate2]:
+        X = generate_scatter(place[0][0], place[1][0], place[0][1], place[1][1], args.perrow, 0.2)
+        for j in range(args.perrow):
+            yaw = 0 # math.pi * (random.random() - 0.5)
+            name = s['items'][(cnt - 1) % len(s['items'])]
+            drop_object('task2_{0}_{1}'.format(cnt, name), name, X[j][0], X[j][1], place[0][2], yaw)
+            cnt += 1
     rospy.loginfo('Spawn finished')
