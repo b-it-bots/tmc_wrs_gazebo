@@ -31,6 +31,11 @@ POSSIBILITY OF SUCH DAMAGE.
   <xacro:arg name="fast_physics" default="true" />
   <xacro:arg name="highrtf" default="false" />
   <world name='default'>
+    <gui>
+      <camera name="user_default">
+            <pose>-4.973894 -1.436761 5.887274 0 0.883642 0.332193</pose>
+      </camera>
+    </gui>
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose frame=''>0 0 10 0 -0 0</pose>
